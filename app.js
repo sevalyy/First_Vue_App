@@ -1,6 +1,14 @@
 const app = Vue.createApp({
   template: `
-    <h1>App with Vue</h1>
-    <p>We have started creating an app </p>`,
+        <h1>{{title}}</h1>
+        <p>{{content}}</p>
+
+    `,
+  data() {
+    return {
+      title: "Web page with Vue",
+      content: "We have just started learning Vue js ",
+    };
+  },
 });
 app.mount("#app");
